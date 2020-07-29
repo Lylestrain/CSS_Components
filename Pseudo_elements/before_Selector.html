@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ::before Selector</title>
+</head>
+<body>
+
+    <h1>CSS ::before Selector</h1>
+
+    <p>The ::before selector inserts something before the content of each selected element(s).</p>
+
+    <p>Use the content property to specify the content to insert.</p>
+
+    <p>Use the ::after selector to insert something after the content.</p>
+
+    <h2>CSS Syntax</h2>
+
+    <section>
+
+        <pre>
+            <code>
+            ::before {
+                css declarations;
+                }
+            </code>
+        </pre>
+        
+    </section>
+
+    <section>
+
+        <h3>Example one</h3>
+
+        <p>Insert some text before the content of each &lt;p&gt;  element:
+    
+        <pre>
+            <code>
+                p::before {
+                    content: "Read this: ";
+                  }
+            </code>
+        </pre>
+
+        <a href="beforeSelector_ex_01.html">See it yourself. X</a>
+        
+    </section>
+
+    <section>
+
+        <h3>Example two</h3>
+
+        <p>Insert content before every &lt;p&gt; element's content, and style the inserted content:
+    
+        <pre>
+            <code>
+                p::before {
+                    content: "Read this -";
+                    background-color: yellow;
+                    color: red;
+                    font-weight: bold;
+                  }
+            </code>
+        </pre>
+
+        <a href="beforeSelector_ex_02.html">See it yourself. X</a>
+        
+    </section>
+    
+</body>
+</html>
