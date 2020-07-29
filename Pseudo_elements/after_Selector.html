@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ::after Selector</title>
+</head>
+<body>
+
+    <h1>CSS ::after Selector</h1>
+
+    <p>The ::after selector inserts something after the content of each selected element(s).</p>
+
+    <p>Use the content property to specify the content to insert.</p>
+
+    <p>Use the ::before selector to insert something before the content.</p>
+
+    <h2>CSS Syntax</h2>
+
+    <section>
+
+        <pre>
+            <code>
+                ::after {
+                    css declarations;
+                  }
+            </code>
+        </pre>
+        
+    </section>
+
+    <section>
+
+        <h3>Example one</h3>
+
+        <p>Insert some text after the content of each &lt;p&gt; element:
+    
+        <pre>
+            <code>
+                p::before {
+                    content: "Read this: ";
+                  }
+            </code>
+        </pre>
+
+        <a href="beforeSelector_ex_01.html">See it yourself. X</a>
+        
+    </section>
+
+
+    
+</body>
+</html>
