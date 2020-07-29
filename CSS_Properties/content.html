@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Propert: content</title>
+</head>
+<body>
+    <h1>CSS content Property</h1>
+
+    <p>The content property is used with the ::before and ::after pseudo-elements, to insert generated content.</p>
+
+    <section>
+
+        <h3>Example one</h3>
+
+        <p>The following example inserts the value of the href attribute in parenthesis after each &lt;a&gt; element:</p>
+    
+        <pre>
+            <code>
+                a::after {
+                    content: " (" attr(href) ")";
+                  }
+            </code>
+        </pre>
+
+        <a href="content_ex_01.html">See it yourself. X</a>
+        
+    </section>
+
+    <section>
+
+        <h3>Example two</h3>
+
+        <p>How to add bullet colors for &lt;ul&gt; or &lt;ol&gt; by removing their default bullets and adding an HTML entity that looks like bullets (&bull;):</p>
+    
+        <pre>
+            <code>
+                ul {
+                    list-style: none; /* Remove HTML bullets */
+                    padding: 0;
+                    margin: 0;
+                  }
+                  
+                li {
+                    padding-left: 16px;
+                  }
+                  
+                li::before {
+                    content: "•"; /* Insert content that looks like bullets */
+                    padding-right: 8px;
+                    color: blue; /* Or a color you prefer */
+                  }
+            </code>
+        </pre>
+
+        <a href="content_ex_02.html">See it yourself. X</a>
+        
+    </section>
+
+    <h2>Related pages</h2>
+
+    <p>CSS reference: <a href="../Pseudo_elements/before_Selector.html"> ::before pseudo element</a></p>
+    
+    <p>CSS reference: <a href="../Pseudo_elements/after_Selector.html"> ::after pseudo element</a></p>
+    
+</body>
+</html>
