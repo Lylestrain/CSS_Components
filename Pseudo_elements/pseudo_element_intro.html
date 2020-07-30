@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element intro</title>
+</head>
+
+<body>
+
+    <h1>CSS Pseudo-elements</h1>
+
+    <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+
+    <p>For example, it can be used to:</p>
+
+    <ul>
+        <li>Style the first letter, or line, of an element</li>
+        <li>Insert content before, or after, the content of an element</li>
+    </ul>
+
+    <h2> Syntax</h2>
+
+    <p>The syntax of pseudo-elements:</p>
+
+    <section>
+
+        <pre>
+            <code>
+                selector::pseudo-element {
+                    property: value;
+                  }
+            </code>
+        </pre>
+        
+    </section>
+
+    <h2>The ::first-line Pseudo-element</h2>
+
+    <p>The ::first-line pseudo-element is used to add a special style to the first line of a text.</p>
+
+    <p>The following example formats the first line of the text in all &lt;p&gt; elements:</p>
+
+    <h3>Example one</h3>
+
+    <pre>
+        <code>
+            p::first-line {
+                color: #ff0000;
+                font-variant: small-caps;
+              }
+        </code>
+    </pre>
+
+    <a href="first-line_ex_01.html">See it yourself. X</a>
+    
+</body>
+</html>
