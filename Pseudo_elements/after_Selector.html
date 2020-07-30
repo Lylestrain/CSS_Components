@@ -33,19 +33,48 @@
 
         <h3>Example one</h3>
 
-        <p>Insert some text after the content of each &lt;p&gt; element:
+        <p>Insert some text after the content of each &lt;p&gt; element:</p>
     
         <pre>
             <code>
-                p::before {
-                    content: "Read this: ";
+                p::after {
+                    content: " - Remember this";
                   }
             </code>
         </pre>
 
-        <a href="beforeSelector_ex_01.html">See it yourself. X</a>
+        <a href="afterSelector_ex_01.html">See it yourself. X</a>
         
     </section>
+
+    <section>
+
+        <h3>Example two</h3>
+
+        <p>Insert content after every &lt;p&gt; element, and style the inserted content:</p>
+    
+        <pre>
+            <code>
+                p::after {
+                    content: " - Remember this";
+                    background-color: yellow;
+                    color: red;
+                    font-weight: bold;
+                  }
+            </code>
+        </pre>
+
+        <a href="afterSelector_ex_02.html">See it yourself. X</a>
+        
+    </section>
+
+    <h2>Related pages</h2>
+
+    <p>CSS reference: <a href="../Pseudo_elements/before_Selector.html"> ::before pseudo element</a></p>
+    
+    
+
+
 
 
     
