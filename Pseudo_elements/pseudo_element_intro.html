@@ -41,18 +41,148 @@
 
     <p>The following example formats the first line of the text in all &lt;p&gt; elements:</p>
 
-    <h3>Example one</h3>
+    <section>
 
-    <pre>
-        <code>
-            p::first-line {
+        <h3>Example one</h3>
+    
+        <pre>
+            <code>
+                p::first-line {
+                    color: #ff0000;
+                    font-variant: small-caps;
+                  }
+            </code>
+        </pre>
+    
+        <a href="first-line_ex_01.html">See it yourself. X</a>
+
+    </section>
+
+    <p><b>Note:</b> The <span class="red">::first-line</span> pseudo-element can only be applied to block-level elements.</p>
+
+    <p>The following properties apply to the <span class="red">::first-line</span>-line pseudo-element:</p>
+
+    <ul>
+        <li>font properties</li>
+        <li>color properties</li>
+        <li>background properties</li>
+        <li>word-spacing</li>
+        <li>letter-spacing</li>
+        <li>text-decoration</li>
+        <li>vertical-align</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>clear</li>
+    </ul>
+
+    <section>
+        <p><b>Notice the double colon notation - </b> <span class="red">::first-line</span> versus <span class="red"> :first-line</span> </p>
+
+        <p>The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between <b>pseudo-classes </b> and<b> pseudo-elements.</b></p>
+
+        <p>The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.</p>
+
+        <p>For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.</p>
+    </section>
+
+    <h2>The ::first-letter Pseudo-element</h2>
+
+    <p>The  <span class="red">::first-letter</span> pseudo-element is used to add a special style to the first letter of a text.</p>
+
+    <p>The following example formats the first letter of the text in all &lt;p&gt; elements:</p>
+
+    <section>
+
+        <h3>Example </h3>
+    
+        <pre>
+            <code>
+                p::first-letter {
+                    color: #ff0000;
+                    font-size: xx-large;
+                  }
+            </code>
+        </pre>
+    
+        <a href="first-letter_ex_01.html">See it yourself. X</a>
+
+    </section>
+
+    <p><b>Note:</b> the <span class="red">::first-letter</span> pseudo-element can only be applied to block-level elements.</p>
+
+    <p>The following properties apply to the <span class="red">::first-letter</span> pseudo- element: </p>
+
+    <ul>
+        <li>font properties</li>
+        <li>color properties </li>
+        <li>background properties</li>
+        <li>margin properties</li>
+        <li>padding properties</li>
+        <li>border properties</li>
+        <li>text-decoration</li>
+        <li>vertical-align (only if "float" is "none")</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>float</li>
+        <li>clear</li>
+    </ul>
+
+    <h2>Pseudo-elements and CSS Classes</h2>
+
+    <p>Pseudo-elements can be combined with CSS classes: </p>
+
+    <section>
+
+        <h3>Example </h3>
+    
+        <pre>
+            <code>
+            p.intro::first-letter {
                 color: #ff0000;
-                font-variant: small-caps;
-              }
-        </code>
-    </pre>
+                font-size: 200%;
+                }
+            </code>
+        </pre>
+    
+        <a href="Pseudo_elementsandCSSclasses_ex_01.html">See it yourself. X</a>
 
-    <a href="first-line_ex_01.html">See it yourself. X</a>
+    </section>
+
+    <p>The example above will display the first letter of paragraphs with class="intro", in red and in a larger size.</p>
+
+    <h2>Multiple Pseudo-elements</h2>
+
+    <p>Several pseudo-elements can also be combined.</p>
+
+    <p>In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:</p>
+
+    <section>
+
+        <h3>Example </h3>
+    
+        <pre>
+            <code>
+                p::first-letter {
+                    color: #ff0000;
+                    font-size: xx-large;
+                  }
+                  
+                  p::first-line {
+                    color: #0000ff;
+                    font-variant: small-caps;
+                  }
+            </code>
+        </pre>
+    
+        <a href="MultiplePseudo_elementsandCSSclasses_ex_01.html">See it yourself. X</a>
+
+    </section>
+
+
+
+
+
+
     
 </body>
 </html>
