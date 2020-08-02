@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables</title>
+</head>
+<body>
+
+    <span class="button"><a href="../index.html">RETURN</a></span>
+
+    <h1>CSS Tables</h1>
+    <h2>Raw table</h2>
+
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+            </tr>
+        </table>
+
+
+    <h2>Table Borders</h2>
+
+    <p>To specify table borders in CSS, use the<span class="red"> border</span> property.</p>
+
+    <section class="example-of">
+        <h3>Example:</h3>
+        <code>
+            <pre>
+    table, th, td {
+        border: 1px solid black;
+        }
+            </pre>
+        </code>
+
+        <span class="button"><a href="tables-01.html">Check it out X</a></span>
+    </section>
+
+    <p>Notice that the table in the example above has double borders. This is because both the table and the &lt;th&gt; and &lt;td&gt; elements have separate borders.</p>
+    
+
+    <h2>Collapse Table Borders</h2>
+
+    <p>The <span class="red">border-collapse</span> property sets whether the table borders should be collapsed into a single border:</p>
+
+    <section class="example-of">
+        <h3>Example:</h3>
+        <code>
+            <pre>
+    table {
+        border-collapse: collapse;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+            </pre>
+        </code>
+
+        <span class="button"><a href="tables-02.html">Check it out X</a></span>
+    </section>
+
+    <p>If you only want a border around the table, only specify the <span class="red">border</span> property for &lt;table&gt;:</p>
+
+    <section class="example-of">
+        <h3>Example 02:</h3>
+        <code>
+            <pre>
+    table {
+        border: 1px solid black;
+        }
+            </pre>
+        </code>
+
+        <span class="button"><a href="tables-03.html">Check it out X</a></span>
+    </section>
+
+    <h2>Table Width and Height</h2>
+
+    <p>Width and height of a table are defined by the <span class="red">width</span> and <span class="red">height</span> properties.</p>
+
+    <p>The example below sets the width of the table to 100%, and the height of the &lt;th&gt; elements to 50px:</p>
+
+    <section class="example-of">
+        <h3>Example:</h3>
+        <code>
+            <pre>
+    table {
+        width: 100%;
+        }
+        
+    th {
+        height: 50px;
+        }
+            </pre>
+        </code>
+
+        <span class="button"><a href="tables-04.html">Check it out X</a></span>
+    </section>
+
+    <h2>Horizontal Alignment</h2>
+
+    <p>The <span class="red">text-align</span> property sets the horizontal alignment (like left, right, or center) of the content in &lt;th&gt; or &lt;td&gt;.</p>
+
+    <p>By default, the content of &lt;th&gt; elements are center-aligned and the content of &lt;td&gt; elements are left-aligned.</p>
+
+    <p>This example left-aligns the text in &lt;th&gt; elements:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+    th {
+        text-align: left;
+        }
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-05.html">Check it out X</a></span>
+        </section>
+
+        <h2>Vertical Alignment</h2>
+
+        <p>The <span class="red">vertical-align</span> property sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th&gt; or &lt;td&gt;.</p>
+
+        <p>By default, the vertical alignment of the content in a table is middle (for both &lt;th&gt; and &lt;td&gt; elements).</p>
+
+        <p>The following example sets the vertical text alignment to bottom for &lt;td&gt; elements:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        td {
+            height: 50px;
+            vertical-align: bottom;
+            }
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-06.html">Check it out X</a></span>
+        </section>
+
+
+        <h2>Table Padding</h2>
+
+        <p>To control the space between the border and the content in a table, use the <span class="red">padding</span> property on &lt;td&gt; and &lt;th&gt; elements:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        th, td {
+            padding: 15px;
+            text-align: left;
+            }
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-07.html">Check it out X</a></span>
+        </section>
+
+        <h2>Horizontal Dividers</h2>
+
+        <p>For horizontal dividers add the <span class="red">border-bottom</span> property to &lt;th&gt; and &lt;td&gt;.</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        th, td {
+            border-bottom: 1px solid #ddd;
+            }
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-08.html">Check it out X</a></span>
+        </section>
+
+        <h2>Hoverable Table</h2>
+
+        <p>Use the <span class="red">:hover</span> selector on &lt;tr&gt; to highlight table rows on mouse over.</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        tr:hover {background-color: #f5f5f5;}
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-09.html">Check it out X</a></span>
+        </section>
+
+        <h2>Striped Tables</h2>
+
+        <p>For zebra-striped tables, use the <span class="red">nth-child()</span> selector and add a <span class="red">background-color</span> to all even (or odd) table rows:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        tr:nth-child(even) {background-color: #f2f2f2;}
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-10.html">Check it out X</a></span>
+        </section>
+
+        <h2>Table Color</h2>
+
+        <p>This example specifies the background color and text color of &lt;th&gt; elements:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+        th {
+        background-color: #4CAF50;
+        color: white;
+        }
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-11.html">Check it out X</a></span>
+        </section>
+
+        <h2>Responsive Table</h2>
+
+        <p>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:</p>
+
+        <p>Add a container element (like &lt;div&gt;) with overflow-x:auto around the &lt;table&gt; element to make it responsive:</p>
+
+        <section class="example-of">
+            <h3>Example:</h3>
+            <code>
+                <pre>
+                    &lt;div style="overflow-x:auto;"&gt;
+
+        &lt;table&gt;
+            ... table content ...
+            &lt;/table&gt;
+            
+        &lt;/div&gt;
+                </pre>
+            </code>
+    
+            <span class="button"><a href="tables-12.html">Check it out X</a></span>
+        </section>
+
+        <p>Set the position of the table caption : <a href="tables-13.html">Check it out X</a></p>
+
+        <p>Make a fancy table : <a href="tables-14.html">Check it out X</a></p>
+
+</body>
+</html>
