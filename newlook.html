@@ -8,24 +8,24 @@
 
 <style>
     *{
-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     body {
-            background: linear-gradient(to bottom, #bec97b 0%,#dbe3c6 100%);
-            color: linen;
-            font-family: "Lato";
-            min-height: 100vh;
+        background: linear-gradient(to bottom, #bec97b 0%,#dbe3c6 100%);
+        color: linen;
+        font-family: "Lato";
+        min-height: 100vh;/* Should be removed. Only for demonstration */
     }
 
     header {
-            background: linear-gradient(to bottom, #227940 0%,#84c51c 100%);
+        background: linear-gradient(to bottom, #227940 0%,#84c51c 100%);
     }
 
     nav {
-            color: linen;
-            background: linear-gradient(to bottom, #07773e 0%,#308a32 100%);
-            box-shadow: 0 2px 6px 0 rgba(0,0,0,.7);
+        color: linen;
+        background: linear-gradient(to bottom, #07773e 0%,#308a32 100%);
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.7);
     }
 
     li {
@@ -36,67 +36,77 @@ box-sizing: border-box;
         width: 85vw;
         margin: 0 auto;
         border: 2px solid greenyellow;
-        min-height: 600px;
+        min-height: 600px;/* Should be removed. Only for demonstration */
     }
 
-    .menu {
-        width: 22%;
-        min-height: 580px;
-        background: linear-gradient(to bottom, #227940 0%,#84c51c 100%);
-        box-shadow: 1px 2px 3px 0 rgba(0,0,0,.7);
-    }
-
-    .items {
-        width: 75%;
-        min-height: 580px;
-        border: 2px solid rebeccapurple;
-        background-color: sandybrown;
-        margin-left: 25%;
-        float: right;
-    }
-
-    .mainContent > section {
-    }
 
     /* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+    .column {
+        padding: 5px;
+        height: 500px; /* Should be removed. Only for demonstration */
+    }
 
-.left {
-  width: 25%;
-  background-color:#aaa;
-}
+    .left {
+        float: left;
+        width: 25%;
+        background-color:#aaa;
+    }
 
-.right {
-  width: 75%;
-  background-color:#bbb;
-}
+    .right {
+        float: right;
+        width: 75%;
+        background-color:#bbb;
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
- /* Create two equal inner-columns that floats next to each other */
-.inner-column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-  background-color: slategrey;
-}
+    /* Create two equal inner-columns that floats next to each other */
+    .inner-column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        background-color: slategrey;
+    }
 
-/* Clear floats after the columns */
-.inner-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    .inner-left {
+        background-color:#999;
+    }
+
+    .inner-right {
+        background-color:#888;
+    }
+
+    
+    /* Remove extra left and right margins, due to padding */
+    .inner-row {
+        margin: 0 -5px;
+    }
+
+    /* Clear floats after the columns */
+    .inner-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        color: darkslategrey;
+    }
+
+    .card-image {
+
+    }
 
 
 </style>
@@ -122,16 +132,84 @@ box-sizing: border-box;
         <h2>Two Unequal Columns</h2>
         
         <div class="row">
+
           <div class="column left" style="background-color:#aaa;">
             <h2>Column 1</h2>
             <p>Some text..</p>
           </div>
+
           <div class="column right" style="background-color:#bbb;">
-            <h2>Column 2</h2>
+
+            <h2>Two Equal Columns</h2>
+            
             <div class="inner-row">
-                <div class="inner-column left"></div>
-                <div class="inner-column right"></div>
+              <div class="inner-column inner-left" style="background-color:#;">
+                <h2>Column 1</h2> 
+                  <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                  </div>
+              </div>
+              <div class="inner-column inner-right" style="background-color:#;">
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+              </div>
             </div>
+            
+          </div>
+
+          <div class="column right" style="background-color:#bbb;">
+
+            <h2>Two Equal Columns</h2>
+            
+            <div class="inner-row">
+              <div class="inner-column" style="background-color:#999;">
+                <h2>Column 1</h2> 
+                  <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                  </div>
+              </div>
+              <div class="inner-column" style="background-color:#888;">
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="column right" style="background-color:#bbb;">
+
+            <h2>Two Equal Columns</h2>
+            
+            <div class="inner-row">
+              <div class="inner-column" style="background-color:#999;">
+                <h2>Column 1</h2> 
+                  <div class="card">
+                    <img src="./images/28.jpg" alt="Thai Salad?" style="width:100%">
+                    <p>Some text</p>
+                    <p>Some text</p>
+                  </div>
+              </div>
+              <div class="inner-column" style="background-color:#888;">
+                <div class="card image">
+                    <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         
