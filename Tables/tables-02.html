@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapse table borders</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <span class="button"><a href="tables_intro.html">RETURN</a></span>
+
+    <h2>Let the borders collapse:</h2>
+    
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+      </tr>
+    </table>
+    
+    <p><b>Note:</b> If a !DOCTYPE is not specified, the border-collapse property can produce unexpected results 
+    in IE8 and earlier versions.</p>
+    
+    
+</body>
+</html>
